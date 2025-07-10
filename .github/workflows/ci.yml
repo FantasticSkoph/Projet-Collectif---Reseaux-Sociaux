@@ -37,7 +37,15 @@ jobs:
 
     - name: Vérifier le JS
       run: npx eslint .
-      
+
+   
+    - name: Installer Lighthouse CI
+      run: npm install -g @lhci/cli@0.15.x
+
+    - name: Lancer Lighthouse CI
+      run: |
+       npx lhci autorun || echo "Lighthouse CI a échoué, mais le pipeline continue"
+           
     - name: Déployer sur GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
