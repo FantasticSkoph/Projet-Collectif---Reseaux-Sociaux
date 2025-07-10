@@ -1,15 +1,13 @@
+permissions:
+  contents: write
+
 name: CI + Déploiement GitHub Pages
 
 on:
   push:
     branches: [ main ]
 
-
 jobs:
-
-permissions:
-  contents: write
-
   build-and-deploy:
     runs-on: ubuntu-latest
 
@@ -37,19 +35,17 @@ permissions:
     - name: Vérifier le CSS
       run: npx stylelint "**/*.css"
       
-    - name: Install ESLint
+    - name: Installer ESLint
       run: npm install -g eslint
-
     - name: Vérifier le JS
       run: npx eslint .
 
-   
     - name: Installer Lighthouse CI
       run: npm install -g @lhci/cli@0.15.x
 
     - name: Lancer Lighthouse CI
       run: |
-       npx lhci autorun || echo "Lighthouse CI a échoué, mais le pipeline continue"
+        npx lhci autorun || echo "Lighthouse CI a échoué, mais le pipeline continue"
            
     - name: Déployer sur GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
