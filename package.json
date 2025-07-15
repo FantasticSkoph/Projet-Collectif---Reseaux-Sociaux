@@ -22,5 +22,8 @@
     "htmlhint": "^1.6.3",
     "stylelint": "^16.21.1",
     "stylelint-config-standard": "^38.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7"
   }
 }
