@@ -1,40 +1,48 @@
-/* Style de base pour le corps de la page */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 0;
-  padding: 0;
+.body {
+    font-family: 'DM Sans', sans-serif;
 }
 
-/* Style pour un en-tête */
-header {
-  background-color: #007acc;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.navbar .nav-link {
+    color: #5e5a89; 
+    font-family: 'DM Sans' sans-serif;
+    font-size: 18px;
+    
+    
+}
+.news {
+    background-color: #F2F1FA; 
+    height: 30px; 
+    font-size: 14px;
+    color: #2d2a4a;
+}
+.subscribe {
+    text-decoration: none; 
+    color:#2d2a4a;
+    
+    font-weight: 600;
+     display: flex;
+      align-items: center;
+       gap: 5px;
+}
+.newsL {
+    color:#2d2a4a
+}
+.logo {
+    width: 200px; /* adapte la valeur selon ton besoin */
+    height: auto; /* garde les proportions */
 }
 
-/* Style pour les liens */
-a {
-  color: #007acc;
-  text-decoration: none;
+.arrow-icon {
+  display: inline-block;
+  transition: transform 0s ease;
+  margin-left: 4px;
 }
 
-a:hover {
-  text-decoration: underline;
+.rotate {
+  transform: rotate(180deg);
 }
-
-/* Style pour un bouton */
-button {
-  background-color: #007acc;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
+p {
+    text-align: justify;
+    margin-bottom: 2rem;
 }
-
-button:hover {
-  background-color: #005f99;
-}
+      
