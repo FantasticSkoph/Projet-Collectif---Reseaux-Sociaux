@@ -94,7 +94,7 @@ body[data-page="accueil"] {}
         line-height: 1.2;
     }
 
-    hr {
+    .bar {
         border: none;
         width: 35rem;
         border-radius: 30px;
@@ -144,7 +144,7 @@ body[data-page="accueil"] {}
         margin-top: 2rem;
     }
 
-    hr {
+    .bar {
         border: none;
         border-radius: 30px;
         height: 3px;
