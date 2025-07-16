@@ -1,0 +1,43 @@
+.body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.navbar .nav-link {
+    color: #5e5a89; 
+    font-family: 'DM Sans' sans-serif;
+    font-size: 18px;
+    
+    
+}
+.news {
+    background-color: #F2F1FA; 
+    height: 30px; 
+    font-size: 14px;
+    color: #2d2a4a;
+}
+.subscribe {
+    text-decoration: none; 
+    color:#2d2a4a;
+    
+    font-weight: 600;
+     display: flex;
+      align-items: center;
+       gap: 5px;
+}
+.newsL {
+    color:#2d2a4a
+}
+.logo {
+    width: 200px; /* adapte la valeur selon ton besoin */
+    height: auto; /* garde les proportions */
+}
+
+.arrow-icon {
+  display: inline-block;
+  transition: transform 0s ease;
+  margin-left: 4px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
