@@ -4,7 +4,7 @@
 
 .navbar .nav-link {
     color: #5e5a89; 
-    font-family: 'DM Sans' sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     
     
@@ -41,3 +41,8 @@
 .rotate {
   transform: rotate(180deg);
 }
+p {
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+      
