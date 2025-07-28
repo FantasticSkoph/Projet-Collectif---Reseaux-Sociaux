@@ -6,8 +6,10 @@
     color: #5e5a89;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
+}
 
-
+h1, h2, h3, h4{
+    font-family: 'DM Sans', sans-serif;
 }
 
 .news {
@@ -58,7 +60,9 @@ p {
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-body[data-page="accueil"] {}
+body [
+    data-page="accueil"
+]
 
 .nav {
     margin: 5rem;
