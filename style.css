@@ -264,3 +264,54 @@ footer a:focus {
   color: #000 !important;
   opacity: 60%;
 }
+
+/* quizz */
+
+.option-bar:hover {
+background: 
+  linear-gradient(to right, #8f6dcc 3rem, #d6cef6 0) 
+    no-repeat;
+}
+.option-letter {
+  margin-left: -10px;
+  margin-right: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  width: 2.5rem; height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.option-bar.correct {
+  background: 
+    linear-gradient(to right, #a1dba1 3rem, #d4edda 0) 
+    no-repeat,
+    #d4edda; 
+  background-size: 100% 100%;
+}
+
+.option-bar.incorrect {
+  background:
+    linear-gradient(to right, #e0a1a1 3rem, #f8d7da 0) 
+    no-repeat,
+    #f8d7da;
+  background-size: 100% 100%;
+} 
+.option-bar {
+  background:
+    linear-gradient(to right, #a58ce3 3rem, #e2dcfa 0)
+    no-repeat;
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+  margin-bottom: .75rem;
+
+  max-width: 500px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s;
+}
+/* quizz */

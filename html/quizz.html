@@ -9,40 +9,55 @@
     <meta name="copyright" content="Mode83">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="../style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&display=swap" rel="stylesheet"/>
-    <link rel="shortcut icon" href="../assets/img/fav.svg" type="image/x-icon"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../assets/img/fav.svg" type="image/x-icon" />
     <title>CtrlTonRézo - Quizz</title>
+    <style>
+    .option-bar {
+      background:
+        linear-gradient(to right, #a58ce3 3rem, #e2dcfa 0)
+        no-repeat;
+      border-radius: .5rem;
+      padding: .75rem 1rem;
+      margin-bottom: .75rem;
+
+      max-width: 500px;
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: .2s;
+    }
+  </style>
 </head>
-<!--Newsletter-->
-<header class="d-flex flex-column">
-    <div class="news">
-        <div class="container d-flex justify-content-between align-items-center h-100 px-3">
-            <span class="newsL">
-                Adhérez dès maintenant à notre newsletter
-            </span>
-            <a href="#" class="subscribe">
-                Subscribe
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#5D5a88" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793L9.146 4.354a.5.5 0 1 1 .708-.708l5 5a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                </svg>
-            </a>
+<body>
+    <!--Newsletter-->
+    <header class="d-flex flex-column">
+        <div class="news">
+            <div class="container d-flex justify-content-between align-items-center h-100 px-3">
+                <span class="newsL">Adhérez dès maintenant à notre newsletter</span>
+                <a href="#" class="subscribe">
+                    Subscribe
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#5D5a88" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793L9.146 4.354a.5.5 0 1 1 .708-.708l5 5a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </a>
+            </div>
         </div>
-    </div>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg px-4 py-3">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg px-4 py-3">
         <div class="container-fluid">
-            <a href="../index.html" class="navbar-brand">
-                <img src="../assets/img/logo.webp" alt="Logo CtrlTonRézo" class="logo mt-3">
-            </a>
+            <a href="../index.html" class="navbar-brand"><img src="../assets/img/logo.webp" alt="Logo CtrlTonRézo" class="logo mt-3"></a>
             <!--MenuBurger-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--Menu complet-->
             <div  class="collapse navbar-collapse justify-content-end" id="navbarContent">
-                <ul class="navbar-nav gap-3 justify-content-end px-5 ms-auto " style="margin-right: 100px;">
+                <ul class="navbar-nav gap-3 justify-content-end px-5 ms-auto">
                     <li class="nav-item"><a href="../index.html" class="nav-link">Accueil</a></li>
                     <li class="nav-item"><a href="informations.html" class="nav-link">Informations</a></li>
                     <li class="nav-item"><a href="multimedia.html" class="nav-link">Multimédia</a></li>
@@ -51,70 +66,206 @@
                     <li class="nav-item"><a href="articles.html" class="nav-link">Article</a></li>
                     <li class="nav-item"><a href="temoignages.html" class="nav-link">Témoignages</a></li>
                     <li class="nav-item"><a href="guides_pratiques.html" class="nav-link">Guide</a></li>
-                    <li class="nav-item"><a href="quizz.html" class="nav-link">Quizz</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Quizz</a></li>
                 </ul>
             </div>
+        </nav>
+      </div>
+    
+  <div class="container py-5">
+
+    <h1 class="text-center text-primary-emphasis mb-4">Quizz</h1>
+
+    <div id="quiz">
+
+      <div class="mb-5" data-q="q1" data-correct="B">
+        <h2 class="h4 text-center text-secondary-emphasis mb-3">Question n°1</h2>
+        <p class="fw-bold text-center">Que faut-il éviter de partager sur les réseaux sociaux ?</p>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">A</div>
+          <label class="form-check-label flex-grow-1" for="q1A">Des articles de blogs</label>
+          <input class="form-check-input ms-2" type="radio" name="q1" id="q1A" value="A">
         </div>
-    </nav>
-</header>
-<body>
-  <p>Body ici</p>
-</body>
-<!-- Début du footer -->
-<footer class="bg-light pt-5 mt-auto">
-  <div class="container">
-    <div class="row align-items-center mb-4">
-      <div class="col-md-4">
-        <h2 class="logo-font">
-          <img src="../assets/img/LOGO_1.webp"  alt="Logo CtrlTonRézo" style="height:40px;"> 
-        </h2>
-      </div>
-      <div class="col-md-8 d-flex justify-content-end">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a aria-label="logo de facebook" class="btn btn-light btn-sm shadow-sm facebook-btn " href="#">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a aria-label="logo de twitter" class="btn btn-light btn-sm shadow-sm twitter-btn" href="#">
-              <i class="bi bi-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a aria-label="logo d'instagram" class="btn btn-light btn-sm shadow-sm instagram-btn" href="#">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a aria-label="logo de linkedin" class="btn btn-light btn-sm shadow-sm linkedin-btn" href="#">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <hr class="mb-4">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="col-12">
-          <div class="d-flex align-items-center justify-content-between flex-wrap w-100 mb-3">
-            <p class="mb-0"> © Copyright - CtrlTonRézo 2025</p>
-            <ul class="list-inline mb-0 d-flex align-items-center  justify-content-center flex-grow-1">
-              <li class="list-inline-item mx-auto ">
-                <a href="conditions_generales.html"> Conditions Générales </a>
-              </li>
-              <li class="list-inline-item ms-"><a href="contact.html">Contact</a></li>
-              <li class="list-inline-item ms-"><a href="equipes.html">Equipes</a></li>
-            </ul>
-            <ul class="list-inline mb-1"></ul>
-          </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">B</div>
+          <label class="form-check-label flex-grow-1" for="q1B">Des informations personnelles</label>
+          <input class="form-check-input ms-2" type="radio" name="q1" id="q1B" value="B">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">C</div>
+          <label class="form-check-label flex-grow-1" for="q1C">Des photos de nourriture</label>
+          <input class="form-check-input ms-2" type="radio" name="q1" id="q1C" value="C">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">D</div>
+          <label class="form-check-label flex-grow-1" for="q1D">Des vidéos drôles</label>
+          <input class="form-check-input ms-2" type="radio" name="q1" id="q1D" value="D">
         </div>
       </div>
+
+      <div class="mb-5" data-q="q2" data-correct="C">
+        <h2 class="h4 text-center text-secondary-emphasis mb-3">Question n°2</h2>
+        <p class="fw-bold text-center"> Que signife un mot de passe « fort » ?</p>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">A</div>
+          <label class="form-check-label flex-grow-1" for="q2A">Un mot de passe avec ton prénom</label>
+          <input class="form-check-input ms-2" type="radio" name="q2" id="q2A" value="A">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">B</div>
+          <label class="form-check-label flex-grow-1" for="q2B">Un mot de passe simple à retenir</label>
+          <input class="form-check-input ms-2" type="radio" name="q2" id="q2B" value="B">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">C</div>
+          <label class="form-check-label flex-grow-1" for="q2C">
+            Un mot de passe long avec lettres, chiffres et symboles</label>
+          <input class="form-check-input ms-2" type="radio" name="q2" id="q2C" value="C">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">D</div>
+          <label class="form-check-label flex-grow-1" for="q2D">Le nom de ton animal de compagnie</label>
+          <input class="form-check-input ms-2" type="radio" name="q2" id="q2D" value="D">
+        </div>
+      </div>
+
+      <div class="mb-5" data-q="q3" data-correct="C">
+        <h2 class="h4 text-center text-secondary-emphasis mb-3">Question n°3</h2>
+        <p class="fw-bold text-center">Que faire si un inconnu t'envoie un message suspect ?</p>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">A</div>
+          <label class="form-check-label flex-grow-1" for="q3A">Lui répondre poliment</label>
+          <input class="form-check-input ms-2" type="radio" name="q3" id="q3A" value="A">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">B</div>
+          <label class="form-check-label flex-grow-1" for="q3B">Lui envoyer une photo</label>
+          <input class="form-check-input ms-2" type="radio" name="q3" id="q3B" value="B">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">C</div>
+          <label class="form-check-label flex-grow-1" for="q3C">L’ignorer et le signaler</label>
+          <input class="form-check-input ms-2" type="radio" name="q3" id="q3C" value="C">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">D</div>
+          <label class="form-check-label flex-grow-1" for="q3D">Lui poser des questions</label>
+          <input class="form-check-input ms-2" type="radio" name="q3" id="q3D" value="D">
+        </div>
+      </div>
+
+      <div class="mb-5" data-q="q4" data-correct="C">
+        <h2 class="h4 text-center text-secondary-emphasis mb-3">Question n°4</h2>
+        <p class="fw-bold text-center">Que signifie le terme « cyberharcèlement » ?</p>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">A</div>
+          <label class="form-check-label flex-grow-1" for="q4A">Se faire harceler dans la rue</label>
+          <input class="form-check-input ms-2" type="radio" name="q4" id="q4A" value="A">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">B</div>
+          <label class="form-check-label flex-grow-1" for="q4B">Recevoir trop de messages d’un ami</label>
+          <input class="form-check-input ms-2" type="radio" name="q4" id="q4B" value="B">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">C</div>
+          <label class="form-check-label flex-grow-1" for="q4C">
+            Être insulté ou menacé en ligne de façon répétée</label>
+          <input class="form-check-input ms-2" type="radio" name="q4" id="q4C" value="C">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">D</div>
+          <label class="form-check-label flex-grow-1" for="q4D">Être bloqué sur un réseau</label>
+          <input class="form-check-input ms-2" type="radio" name="q4" id="q4D" value="D">
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button id="btnCheck" class="btn btn-lg rounded-5" style="background-color: #4F378B; color: #fff;">
+          Voir les réponses
+        </button>
+      </div>
+
     </div>
   </div>
-</footer>
-<!-- Fin du footer -->
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</html>
+<footer class="bg-light pt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <h2 class="logo-font">
+                      <img src="../assets/img/LOGO_1.webp" alt="Logo CtrlTonRézo" style="height:40px;"> 
+                  </h2>
+              </div>
+              <div class="col-md-8 d-flex justify-content-end">
+                  <ul class="list-inline mb-0">
+                      <li class="list-inline-item">
+                          <a aria-label="logo de facebook" class="btn btn-light btn-sm shadow-sm facebook-btn" href="#">
+                              <i class="bi bi-facebook"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a aria-label="logo de twitter" class="btn btn-light btn-sm shadow-sm twitter-btn" href="#">
+                              <i class="bi bi-twitter"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a aria-label="logo d'instagram" class="btn btn-light btn-sm shadow-sm instagram-btn" href="#">
+                              <i class="bi bi-instagram"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a aria-label="logo de linkedin" class="btn btn-light btn-sm shadow-sm linkedin-btn" href="#">
+                              <i class="bi bi-linkedin"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <hr class="mb-4">
+          <div class="row align-items-center">
+              <div class="col-md-12">
+                  <div class="d-flex align-items-center justify-content-between flex-wrap">
+                      <p class="mb-0">© Copyright - CtrlTonRézo 2025</p>
+                      <ul class="list-inline mb-0 d-flex align-items-center justify-content-center flex-grow-1">
+                          <li class="list-inline-item"><a href="conditions_generales.html">Conditions Génerales</a></li>
+                          <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                          <li class="list-inline-item" style="padding: 1rem;"><a href="equipes.html">Equipes</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+    </main>
+  </body>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+        crossorigin="anonymous"></script>
+    <script>
+    document.getElementById('btnCheck').addEventListener('click', () => {
+        const blocks = Array.from(document.querySelectorAll('[data-q]'));
+        // verification
+        const unansweredBlock = blocks.find(block => 
+        !block.querySelector(`input[name="${block.dataset.q}"]:checked`)
+        );
+        if (unansweredBlock) {
+        alert('Veuillez répondre à toutes les questions avant de vérifier.');
+        return; //exit
+        }
+        blocks.forEach(block => {
+        const name    = block.dataset.q;
+        const correct = block.dataset.correct;
+        block.querySelectorAll('.option-bar').forEach(option => {
+            option.classList.remove('correct','incorrect');
+            const inp = option.querySelector('input');
+            if (inp.value === correct) {
+            option.classList.add('correct');
+            } else {
+            option.classList.add('incorrect');
+            }
+        });
+        });
+    });
+    </script>
+  </html>
