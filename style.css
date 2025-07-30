@@ -1,3 +1,8 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .body {
     font-family:'DM Sans',sans-serif;
 }
@@ -6,7 +11,7 @@
     font-family:'DM Sans',sans-serif;
     font-size:18px;
 }
-h1,h2,h3,h4 {
+h1,h3,h4 {
     font-family:'DM Sans',sans-serif;
 }
 .news {
@@ -60,6 +65,7 @@ body [
 }
 .titre h2 {
     transition:0.5s ease;line-height:1.8;
+    font-family:'DM Sans',sans-serif;
 }
 @media(max-width:1277px) {
     .texteinfo {
@@ -140,4 +146,122 @@ body [
         height: auto;
         aspect-ratio: 16 / 9;
     }
+}
+.logo-font {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a90e2;
+}
+.list-inline-item a.btn {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+.list-inline-item a.btn:hover {
+  color: #fff;
+  background-color: #4a90e2;
+}
+footer .list-inline {
+  display: flex;
+  gap: 20px;
+}
+footer p,
+footer .list-inline {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.instagram-btn:hover {
+  color: #fff;
+  background: radial-gradient(
+    circle at 30% 110%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border: none;
+}
+footer p,
+footer .list-inline {
+  color: #343a40;
+}
+footer a,
+footer a:visited {
+  color: #343a40;
+}
+footer a:hover,
+footer a:focus {
+  color: #007bff;
+  outline: 2px solid #007bff;
+}
+.linkedin-btn:hover {
+  color: #fff;
+  background: radial-gradient(
+    circle at 30% 110%,
+    #0077b5 0%,
+    #0077b5 5%,
+    #00a0dc 45%,
+    #00a0dc 60%,
+    #00a0dc 90%
+  );
+  border: none;
+}
+.twitter-btn:hover {
+  color: #fff;
+  background: radial-gradient(
+    circle at 30% 110%,
+    #1da1f2 0%,
+    #1da1f2 5%,
+    #1da1f2 45%,
+    #1da1f2 60%,
+    #1da1f2 90%
+  );
+  border: none;
+}
+.facebook-btn:hover {
+  color: #fff;
+  background: radial-gradient(
+    circle at 30% 110%,
+    #3b5998 0%,
+    #3b5998 5%,
+    #3b5998 45%,
+    #3b5998 60%,
+    #3b5998 90%
+  );
+  border: none;
+}
+ .form-container {
+      background-color: #B4B2C9;
+      color: #000;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 700px;
+      margin: 40px auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .form-control, .form-select {
+      border-radius: 10px;
+    }
+
+.button-submit {
+  background-color: #5D5A88 !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.button-submit:hover {
+  background-color: #5D5A88 !important;
+  color: #000 !important;
+  opacity: 60%;
 }
