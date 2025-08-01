@@ -1,11 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site Préventif dangers réseaux sociaux">
+  <meta name="author" content="Mode83">
+  <meta name="copyright" content="Mode83">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&display=swap"
+        rel="stylesheet">
+  <link rel="shortcut icon" href="../assets/img/fav.svg" type="image/x-icon">
+  <title>CtrlTonRézo - Quizz</title>
+
+  <style>
+    .option-bar {
+      background:
+        linear-gradient(to right, #a58ce3 3rem, #e2dcfa 0)
+        no-repeat;
+      border-radius: .5rem;
+      padding: .75rem 1rem;
+      margin-bottom: .75rem;
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: .2s;
+    }
+  </style>
 </head>
+
 <body>
-    
+  <!-- HEADER: newsletter + navbar -->
+  <header class="d-flex flex-column">
+    <!-- Newsletter -->
+    <div class="news">
+      <div class="container d-flex justify-content-between align-items-center h-100 px-3">
+        <span class="newsL">Adhérez dès maintenant à notre newsletter</span>
+        <a href="#" class="subscribe d-flex align-items-center">
+          Subscribe
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#5D5a88" viewBox="0 0 16 16" class="ms-1">
+            <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793L9.146 4.354a.5.5 0 1 1 .708-.708l5 5a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg px-4 py-3">
+      <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand">
+          <img src="../assets/img/logo.webp" alt="Logo CtrlTonRézo" class="logo mt-3">
+        </a>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav gap-3 px-5 ms-auto">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Accueil</a></li>
+            <li class="nav-item"><a href="informations.html" class="nav-link">Informations</a></li>
+            <li class="nav-item"><a href="multimedia.html" class="nav-link">Multimédia</a></li>
+            <li class="nav-item"><a href="prevention.html" class="nav-link">Prévention</a></li>
+            <li class="nav-item"><a href="derriere_l_ecran.html" class="nav-link">Derrière L'Ecran</a></li>
+            <li class="nav-item"><a href="articles.html" class="nav-link">Article</a></li>
+            <li class="nav-item"><a href="temoignages.html" class="nav-link">Témoignages</a></li>
+            <li class="nav-item"><a href="guides_pratiques.html" class="nav-link">Guide</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">Quizz</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container py-5">
+    <h1 class="text-center text-primary-emphasis mb-4">Quizz</h1>
+
+    <div id="quiz">
+      <!-- Question 1 -->
+      <div class="mb-5" data-q="q1" data-correct="B">
+        <h2 class="h4 text-center text-secondary-emphasis mb-3">Question n°1</h2>
+        <p class="fw-bold text-center">Que faut-il éviter de partager sur les réseaux sociaux ?</p>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">A</div>
+          <label class="form-check-label flex-grow-1" for="q1A">Des articles de blogs</label>
+          <input class="form-check-input ms-2" type="radio" name="q1" id="q1A" value="A">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">B</div>
+          <label class="form-check-label flex-grow-1" for="q1B">Des informations personnelles</label>
+          <input class="form-check-input ms-2" type="radio" name="q1" id="q1B" value="B">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">C</div>
+          <label class="form-check-label flex-grow-1" for="q1C">Des photos de nourriture</label>
+          <input class="form-check-input ms-2" type="radio" name="q1" id="q1C" value="C">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">D</div>
+          <label class="form-check-label flex-grow-1" for="q1D">Des vidéos drôles</label>
+          <input class="form-check-input ms-2" type="radio" name="q1" id="q1D" value="D">
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="mb-5" data-q="q2" data-correct="C">
+        <h2 class="h4 text-center text-secondary-emphasis mb-3">Question n°2</h2>
+        <p class="fw-bold text-center">Que signifie un mot de passe « fort » ?</p>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">A</div>
+          <label class="form-check-label flex-grow-1" for="q2A">Un mot de passe avec ton prénom</label>
+          <input class="form-check-input ms-2" type="radio" name="q2" id="q2A" value="A">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">B</div>
+          <label class="form-check-label flex-grow-1" for="q2B">Un mot de passe simple à retenir</label>
+          <input class="form-check-input ms-2" type="radio" name="q2" id="q2B" value="B">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">C</div>
+          <label class="form-check-label flex-grow-1" for="q2C">Un mot de passe long avec lettres, chiffres et symboles</label>
+          <input class="form-check-input ms-2" type="radio" name="q2" id="q2C" value="C">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">D</div>
+          <label class="form-check-label flex-grow-1" for="q2D">Le nom de ton animal de compagnie</label>
+          <input class="form-check-input ms-2" type="radio" name="q2" id="q2D" value="D">
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="mb-5" data-q="q3" data-correct="C">
+        <h2 class="h4 text-center text-secondary-emphasis mb-3">Question n°3</h2>
+        <p class="fw-bold text-center">Que faire si un inconnu t'envoie un message suspect ?</p>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">A</div>
+          <label class="form-check-label flex-grow-1" for="q3A">Lui répondre poliment</label>
+          <input class="form-check-input ms-2" type="radio" name="q3" id="q3A" value="A">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">B</div>
+          <label class="form-check-label flex-grow-1" for="q3B">Lui envoyer une photo</label>
+          <input class="form-check-input ms-2" type="radio" name="q3" id="q3B" value="B">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">C</div>
+          <label class="form-check-label flex-grow-1" for="q3C">L’ignorer et le signaler</label>
+          <input class="form-check-input ms-2" type="radio" name="q3" id="q3C" value="C">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">D</div>
+          <label class="form-check-label flex-grow-1" for="q3D">Lui poser des questions</label>
+          <input class="form-check-input ms-2" type="radio" name="q3" id="q3D" value="D">
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="mb-5" data-q="q4" data-correct="C">
+        <h2 class="h4 text-center text-secondary-emphasis mb-3">Question n°4</h2>
+        <p class="fw-bold text-center">Que signifie le terme « cyberharcèlement » ?</p>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">A</div>
+          <label class="form-check-label flex-grow-1" for="q4A">Se faire harceler dans la rue</label>
+          <input class="form-check-input ms-2" type="radio" name="q4" id="q4A" value="A">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">B</div>
+          <label class="form-check-label flex-grow-1" for="q4B">Recevoir trop de messages d’un ami</label>
+          <input class="form-check-input ms-2" type="radio" name="q4" id="q4B" value="B">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">C</div>
+          <label class="form-check-label flex-grow-1" for="q4C">Être insulté ou menacé en ligne de façon répétée</label>
+          <input class="form-check-input ms-2" type="radio" name="q4" id="q4C" value="C">
+        </div>
+        <div class="form-check option-bar mx-auto">
+          <div class="option-letter">D</div>
+          <label class="form-check-label flex-grow-1" for="q4D">Être bloqué sur un réseau</label>
+          <input class="form-check-input ms-2" type="radio" name="q4" id="q4D" value="D">
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button id="btnCheck" class="btn btn-lg rounded-5" style="background-color: #4F378B; color: #fff;">
+          Voir les réponses
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-light pt-5">
+    <div class="container">
+      <div class="row align-items-center mb-4">
+        <div class="col-md-4">
+          <h2 class="logo-font">
+            <img src="../assets/img/LOGO_1.webp" alt="Logo CtrlTonRézo" style="height:40px;">
+          </h2>
+        </div>
+        <div class="col-md-8 d-flex justify-content-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a aria-label="Facebook" class="btn btn-light btn-sm shadow-sm facebook-btn" href="#">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a aria-label="Twitter" class="btn btn-light btn-sm shadow-sm twitter-btn" href="#">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a aria-label="Instagram" class="btn btn-light btn-sm shadow-sm instagram-btn" href="#">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a aria-label="LinkedIn" class="btn btn-light btn-sm shadow-sm linkedin-btn" href="#">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="mb-4">
+
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+          <p class="mb-0">© CtrlTonRézo 2025</p>
+          <ul class="list-inline mb-0 d-flex gap-3">
+            <li class="list-inline-item"><a href="conditions_generales.html">Conditions Générales</a></li>
+            <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+            <li class="list-inline-item"><a href="equipes.html">Equipes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+          crossorigin="anonymous"></script>
+  <script>
+    document.getElementById('btnCheck').addEventListener('click', () => {
+      const blocks = Array.from(document.querySelectorAll('[data-q]'));
+      const unanswered = blocks.find(b => !b.querySelector(`input[name="${b.dataset.q}"]:checked`));
+      if (unanswered) {
+        alert('Veuillez répondre à toutes les questions avant de vérifier.');
+        return;
+      }
+      blocks.forEach(block => {
+        const correct = block.dataset.correct;
+        block.querySelectorAll('.option-bar').forEach(opt => {
+          opt.classList.remove('correct', 'incorrect');
+          const inp = opt.querySelector('input');
+          opt.classList.add(inp.value === correct ? 'correct' : 'incorrect');
+        });
+      });
+    });
+  </script>
 </body>
 </html>
