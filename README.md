@@ -7,6 +7,7 @@ Ce projet est un site web statique développé dans le cadre d’un projet colle
 ## 🚀 Démo en ligne
 
 🔗 Voir le site sur GitHub Pages
+https://fantasticskoph.github.io/Projet-Collectif---Reseaux-Sociaux/
 
 ---
 
