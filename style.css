@@ -164,7 +164,7 @@ body[data-page="accueil"] .nav {
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .iframe-wrapper {
     border-radius: 20px;
     width: 100%;
@@ -297,7 +297,7 @@ footer a:focus {
 .button-submit:hover {
   background-color: #5D5A88 !important;
   color: #000 !important;
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 /* Quizz base rule must come before modifiers */
