@@ -1,183 +1,207 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Page d'Informations" />
-    <title>Informations</title>
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "DM Sans", sans-serif;
-      }
-      p {
-        text-align: justify;
-        margin-bottom: 2rem;
-      }
-    </style>
-  </head>
-
-  <body>
-    <nav>
-      <!-- navbar -->
-    </nav>
-
-    <main class="container">
-      <h1 class="my-4 text-center fw-bold">Informations</h1>
-
-      <p class="mb-3 p-5">
-        Les réseaux sociaux sont des outils de communication et d’information
-        puissants et facilement accessibles. Aujourd’hui installés dans les
-        usages personnels des internautes, mais aussi dans les usages
-        professionnels des entreprises qui les utilisent comme vitrine de leur
-        activité, ils n’échappent pas aux activités malveillantes. Escroquerie,
-        usurpation d’identité, chantage, vol d’informations, cyberharcèlement,
-        désinformation, diffamation… sont autant de dangers auxquels sont
-        confrontés les utilisateurs de ces réseaux.
-      </p>
-
-      <!-- Articles -->
-      <article class="mb-4 p-4 bg-light rounded-3 shadow">
-        <h2 class="mb-4 fw-bold">Cyberharcèlement</h2>
-        <div class="row align-items-center g-4">
-          <div class="col-md-4">
-            <img
-              src="assets/img/cyberharcelement.webp"
-              alt="Illustration cyberharcèlement"
-              loading="lazy"
-              width="340"
-              height="205"
-              class="rounded-3"
-            />
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Site Préventif dangers réseaux sociaux"/>
+  <meta name="author" content="Mode83"/>
+  <meta name="copyright" content="Mode83">
+  <meta name="robots" content="index, follow"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&display=swap" rel="stylesheet"/>
+  <link rel="shortcut icon" href="../assets/img/fav.svg" type="image/x-icon"/>
+  <title>CtrlTonRézo - Informations</title>
+</head>
+<!-- Newsletter -->
+<header class="d-flex flex-column">
+  <div class="news">
+    <div class="container d-flex justify-content-between align-items-center h-100 px-3">
+      <span class="newsL">
+        Adhérez dès maintenant à notre newsletter
+      </span>
+      <a href="#" class="subscribe d-flex align-items-center">
+        Subscribe
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#5D5A88" viewBox="0 0 16 16"
+          class="ms-1">
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793L9.146 4.354a.5.5 0 1 1 .708-.708l5 5a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg px-4 py-3">
+      <div class="container-fluid">
+          <a href="#" class="navbar-brand"><img src="../assets/img/logo.webp" alt="Logo CtrlTonRézo" class="logo mt-3"></a>
+          <!--MenuBurger-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Menu complet-->
+          <div  class="collapse navbar-collapse justify-content-end" id="navbarContent">
+              <ul class="navbar-nav gap-3 justify-content-end px-5 ms-auto " style="margin-right: 100px;">
+                  <li class="nav-item"><a href="../index.html" class="nav-link">Accueil</a></li>
+                  <li class="nav-item"><a href="informations.html" class="nav-link active">Informations</a></li>
+                  <li class="nav-item"><a href="multimedia.html" class="nav-link">Multimédia</a></li>
+                  <li class="nav-item"><a href="prevention.html" class="nav-link">Prévention</a></li>
+                  <li class="nav-item"><a href="derriere_l_ecran.html" class="nav-link">Derrière L'Ecran</a></li>
+                  <li class="nav-item"><a href="articles.html" class="nav-link">Article</a></li>
+                  <li class="nav-item"><a href="temoignages.html" class="nav-link">Témoignages</a></li>
+                  <li class="nav-item"><a href="guides_pratiques.html" class="nav-link">Guide</a></li>
+                  <li class="nav-item"><a href="html/quizz.html" class="nav-link">Quizz</a></li>
+              </ul>
           </div>
-          <div class="col-md-8">
-            <p>
-              Le harcèlement par internet est appelé cyberharcèlement. Il s'agit
-              d'un délit. Si vous êtes victime d'un harcèlement en ligne, vous
-              pouvez signaler les faits à la police ou à la gendarmerie et
-              demander la suppression des contenus illicites. Vous pouvez
-              également déposer plainte contre l'auteur du cyberharcèlement
-              et/ou contre l'hébergeur internet. Le cyberharcèlement peut se
-              faire par le biais d’un réseau social, un forum, un jeu vidéo
-              multijoueurs, un blog... Il peut s'agir de publications sur une
-              plateforme publique (un forum) ou d'échanges privés (sur la
-              messagerie privée d'un réseau social).
-            </p>
+      </nav>
+</header>
+<body>
+  <main class="container">
+    <h1 class="my-4 text-center fw-bold">
+      Informations
+    </h1>
+    <p class="mb-3 px-3 py-4">
+      Les réseaux sociaux sont des outils de communication et d’information puissants et facilement accessibles.
+      Aujourd’hui installés dans les usages personnels des internautes, mais aussi dans les usages professionnels des
+      entreprises qui les utilisent comme vitrine de leur activité, ils n’échappent pas aux activités malveillantes.
+      Escroquerie, usurpation d’identité, chantage, vol d’informations, cyberharcèlement, désinformation, diffamation…
+      sont autant de dangers auxquels sont confrontés les utilisateurs de ces réseaux.
+    </p>
+  <!-- Article 1 -->
+    <article class="mb-4 p-4 bg-light rounded-3 shadow">
+      <h2 class="mb-4 fw-bold">
+        Cyberharcèlement
+      </h2>
+      <div class="row align-items-center g-4">
+        <div class="col-md-4">
+          <img src="../assets/img/cyberharcelement.webp" alt="Illustration cyberharcèlement" loading="lazy" width="340" height="205" class="rounded-3"/>
+        </div>
+        <div class="col-md-8">
+          <p>
+            Le harcèlement par internet est appelé cyberharcèlement. Il s'agit d'un délit. Si vous êtes victime d'un
+            harcèlement en ligne, vous pouvez signaler les faits à la police ou à la gendarmerie et demander la
+            suppression des contenus illicites. Vous pouvez également déposer plainte contre l'auteur du
+            cyberharcèlement et/ou contre l'hébergeur internet. Le cyberharcèlement peut se faire par le biais d’un
+            réseau social, un forum, un jeu vidéo multijoueurs, un blog... Il peut s'agir de publications sur une
+            plateforme publique (un forum) ou d'échanges privés (sur la messagerie privée d'un réseau social).
+          </p>
+        </div>
+      </div>
+    </article>
+    <!-- Article 2 -->
+    <article class="mb-4 p-4 bg-light rounded-3 shadow">
+      <h2 class="mb-4 fw-bold">Désinformation</h2>
+      <div class="row align-items-center g-4">
+        <div class="col-md-4">
+          <img src="../assets/img/desinformation.webp" alt="Illustration désinformation" loading="lazy" width="340" height="191" class="rounded-3"/>
+        </div>
+        <div class="col-md-8">
+          <p>
+            La désinformation est le partage d’information et de connaissances inexactes qui vise principalement à
+            tromper l’individu et est diffusée dans le but de causer un préjudice grave. Elle peut affecter un vaste
+            éventail de droits fondamentaux, saper la réponse des politiques publiques ou encore amplifier les tensions
+            en période d'urgence ou de conflit armé. La capacité à faire preuve d’esprit critique face à la propagande,
+            à la désinformation et aux fausses nouvelles en ligne n’est pas qu’un outil de protection, c’est aussi une
+            compétence démocratique essentielle à part entière.
+          </p>
+        </div>
+      </div>
+    </article>
+    <!-- Article 3 -->
+    <article class="mb-4 p-4 bg-light rounded-3 shadow">
+      <h2 class="mb-4 fw-bold">Isolement</h2>
+      <div class="row align-items-center g-4">
+        <div class="col-md-4">
+          <img src="../assets/img/isolement_social.webp" alt="Illustration isolement social" loading="lazy" width="340" height="227" class="rounded-3" />
+        </div>
+        <div class="col-md-8">
+          <p>
+            L'isolement social désigne un manque d'interactions sociales en raison de divers facteurs sociaux,
+            psychologiques et physiques ou encore d'un temps d'écran excessif. Il s'agit d'une cause importante de
+            mortalité et d'une source de souffrances. Aussi, l’isolement social n’est pas un événement prévisible, il
+            peut survenir à n’importe quel moment dans notre vie. L'isolement social crée un fort sentiment de solitude
+            chez la personne atteinte. Bien que l'isolement social objectif puisse affecter la solitude, il est perçu
+            que l'isolement est plus proche de la qualité que de la quantité des interactions sociales.
+          </p>
+        </div>
+      </div>
+    </article>
+    <!-- Article 4 -->
+    <article class="mb-4 p-4 bg-light rounded-3 shadow">
+      <h2 class="mb-4 fw-bold">Manipulation Psychologique</h2>
+      <div class="row align-items-center g-4">
+        <div class="col-md-4">
+          <img src="../assets/img/manipulation_psychologique.webp" alt="Illustration manipulation psychologique" loading="lazy" width="340" height="227" class="rounded-3" />
+        </div>
+        <div class="col-md-8">
+          <p>
+            Ce ne sont généralement pas les victimes qui choisissent les manipulateurs, mais bien les manipulateurs qui
+            repèrent et choisissent soigneusement leurs victimes, et il est difficile de sortir d’une relation d’emprise
+            car les victimes sont généralement éprises de la personne qu’elles croient avoir rencontrée au tout début,
+            persuadées que sa « face méchante » est une erreur et qu’elle s’en ira bientôt. Il existe toute une palette
+            de méthodes allant de la ruse, une action qui peut être parfaitement légitime, aux formes les plus
+            dégradantes de manipulations psychiques, en passant par toutes les sortes de mensonge.
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+<!-- Footer -->
+<footer class="bg-light pt-5 mt-auto">
+  <div class="container">
+    <div class="row align-items-center mb-4">
+      <div class="col-md-4">
+        <h2 class="logo-font">
+          <img src="../assets/img/LOGO_1.webp"  alt="Logo CtrlTonRézo" style="height:40px;"> 
+        </h2>
+      </div>
+      <div class="col-md-8 d-flex justify-content-end">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a aria-label="logo de facebook" class="btn btn-light btn-sm shadow-sm facebook-btn " href="#">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a aria-label="logo de twitter" class="btn btn-light btn-sm shadow-sm twitter-btn" href="#">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a aria-label="logo d'instagram" class="btn btn-light btn-sm shadow-sm instagram-btn" href="#">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a aria-label="logo de linkedin" class="btn btn-light btn-sm shadow-sm linkedin-btn" href="#">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="mb-4">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between flex-wrap w-100 mb-3">
+            <p class="mb-0"> © Copyright - CtrlTonRézo 2025</p>
+            <ul class="list-inline mb-0 d-flex align-items-center  justify-content-center flex-grow-1">
+              <li class="list-inline-item mx-auto ">
+                <a href="conditions_generales.html"> Conditions Générales </a>
+              </li>
+              <li class="list-inline-item ms-"><a href="contact.html">Contact</a></li>
+              <li class="list-inline-item ms-"><a href="equipes.html">Equipes</a></li>
+            </ul>
+            <ul class="list-inline mb-1"></ul>
           </div>
         </div>
-      </article>
-
-      <article class="mb-4 p-4 bg-light rounded-3 shadow">
-        <h2 class="mb-4 fw-bold">Désinformation</h2>
-        <div class="row align-items-center g-4">
-          <div class="col-md-4">
-            <img
-              src="assets/img/desinformation.webp"
-              alt="Illustration désinformation"
-              loading="lazy"
-              width="340"
-              height="191"
-              class="rounded-3"
-            />
-          </div>
-          <div class="col-md-8">
-            <p>
-              La désinformation est le partage d’information et de connaissances
-              inexactes qui vise principalement à tromper l’individu et est
-              diffusée dans le but de causer un préjudice grave. Elle peut
-              affecter un vaste éventail de droits fondamentaux, saper la
-              réponse des politiques publiques ou encore amplifier les tensions
-              en période d'urgence ou de conflit armé. La capacité à faire
-              preuve d’esprit critique face à la propagande, à la désinformation
-              et aux fausses nouvelles en ligne n’est pas qu’un outil de
-              protection, c’est aussi une compétence démocratique essentielle à
-              part entière.
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="mb-4 p-4 bg-light rounded-3 shadow">
-        <h2 class="mb-4 fw-bold">Isolement</h2>
-        <div class="row align-items-center g-4">
-          <div class="col-md-4">
-            <img
-              src="assets/img/isolement_social.webp"
-              alt="Illustration isolement social"
-              loading="lazy"
-              width="340"
-              height="227"
-              class="rounded-3"
-            />
-          </div>
-          <div class="col-md-8">
-            <p>
-              L'isolement social désigne un manque d'interactions sociales en
-              raison de divers facteurs sociaux, psychologiques et physiques ou
-              encore d'un temps d'écran excessif. Il s'agit d'une cause
-              importante de mortalité et d'une source de souffrances. Aussi,
-              l’isolement social n’est pas un événement prévisible, il peut
-              survenir à n’importe quel moment dans notre vie. L'isolement
-              social crée un fort sentiment de solitude chez la personne
-              atteinte. Bien que l'isolement social objectif puisse affecter la
-              solitude, il est perçu que l'isolement est plus proche de la
-              qualité que de la quantité des interactions sociales.
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="mb-4 p-4 bg-light rounded-3 shadow">
-        <h2 class="mb-4 fw-bold">Manipulation Psychologique</h2>
-        <div class="row align-items-center g-4">
-          <div class="col-md-4">
-            <img
-              src="assets/img/manipulation_psychologique.webp"
-              alt="Illustration manipulation psychologique"
-              loading="lazy"
-              width="340"
-              height="227"
-              class="rounded-3"
-            />
-          </div>
-          <div class="col-md-8">
-            <p>
-              Ce ne sont généralement pas les victimes qui choisissent les
-              manipulateurs, mais bien les manipulateurs qui repèrent et
-              choisissent soigneusement leurs victimes, et il est difficile de
-              sortir d’une relation d’emprise car les victimes sont généralement
-              éprises de la personne qu’elles croient avoir rencontrée au tout
-              début, persuadées que sa « face méchante » est une erreur et
-              qu’elle s’en ira bientôt. Il existe toute une palette de méthodes
-              allant de la ruse, une action qui peut être parfaitement légitime,
-              aux formes les plus dégradantes de manipulations psychiques, en
-              passant par toutes les sortes de mensonge.
-            </p>
-          </div>
-        </div>
-      </article>
-    </main>
-
-    <footer class="mt-5 text-center">
-      <!-- footer -->
-    </footer>
-
-    <!-- Bootstrap JS   -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </html>
